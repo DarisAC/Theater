@@ -1,0 +1,29 @@
+// .spectacle {
+//   background-color: $black;
+// }
+.spectacle__content {
+  display: flex;
+  max-width: 1800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.spectacle__item {
+  min-width: 442px;
+  min-height: 550px;
+
+  @include text-opt;
+  background-size: cover;
+
+  &:nth-child(1) {
+    background-image: url(../image/spectacle1.png);
+  }
+  &:nth-child(2) {
+    background-image: url(../image/spectacle2.png);
+  }
+  &:nth-child(3) {
+    background-image: url(../image/spectacle3.png);
+  }
+  &:nth-child(4) {
+    background-image: url(../image/spectacle4.png);
+  }
+}

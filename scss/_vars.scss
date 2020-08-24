@@ -1,0 +1,7 @@
+$gold: #d1a954;
+$black: #333333;
+@mixin text-opt {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}

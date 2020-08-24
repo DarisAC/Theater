@@ -1,0 +1,123 @@
+.maecenas {
+  //   background-color: $black;
+  padding-bottom: 80px;
+}
+.contact__details {
+  max-width: 255px;
+  font-weight: 700;
+  @include text-opt;
+  letter-spacing: 1px;
+  &_item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+input {
+  width: 180px;
+  background-color: #616161;
+  border: 1px solid #989898;
+  padding-left: 15px;
+  height: 35px;
+}
+.maecenas__cotact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__form {
+  width: 730px;
+}
+.contact__form_input {
+  display: flex;
+}
+
+.input_item:not(:last-child) {
+  margin-right: 30px;
+}
+.input__col1,
+.input__col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input__col3 {
+  input {
+    width: 310px;
+    height: 100px;
+    text-align: left;
+  }
+}
+.contact__form_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1440px) {
+}
+@media screen and (max-width: 1439px) {
+  .maecenas__cotact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact__details {
+    display: flex;
+    max-width: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 2;
+  }
+  .contact__details_item {
+    width: 50%;
+    &:nth-child(2) {
+      text-align: right;
+    }
+    &:nth-child(4) {
+      text-align: right;
+    }
+  }
+  .contact__form {
+    order: 1;
+    margin-bottom: 80px;
+  }
+  .input__col3 {
+    input {
+      width: 240px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact__form_input {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .input_item:not(:last-child) {
+    margin-right: 0;
+  }
+  .input_item {
+    &:nth-child(1) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(3) {
+      margin-bottom: 30px;
+    }
+  }
+  .input__col3 {
+    margin-top: 30px;
+    width: 100%;
+    input {
+      min-width: 240px;
+      width: 100%;
+    }
+  }
+  .contact__form_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .development_text {
+    text-align: center;
+    max-width: 435px;
+    order: 2;
+    margin-top: 30px;
+  }
+  .contact__form_footer {
+    margin-top: 0;
+  }
+}
